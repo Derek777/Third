@@ -1,0 +1,28 @@
+{
+  "name": "third",
+  "version": "1.0.0",
+  "description": "third psd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Derek777/Third.git"
+  },
+  "author": "Derek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Derek777/Third/issues"
+  },
+  "homepage": "https://github.com/Derek777/Third#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-scss": "^1.4.0"
+  }
+}
