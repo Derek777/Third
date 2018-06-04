@@ -1,0 +1,55 @@
+///* Стили для больших экранов (дисплей максимум 1199 пикселей) */
+//@media (max-width: 1199px) { ... }
+//
+///* Стили для средних экранов (дисплей максимум 991 пикселей) */
+//@media (max-width: 991px) { ... }
+//
+///* Стили для маленьких экранов (дисплей максимум 767 пикселей) */
+//@media (max-width: 767px) { ... }
+//
+///* Стили для очень маленьких экранов (дисплей максимум 575 пикселей) */
+//@media (max-width: 575px) {
+//  background-image: url("../img/header_bg_575.jpg");
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//}
+
+//.j{
+//    background-color: yellow;
+//    height: 100px;
+//    width: 100px;
+//}
+//.header{
+//    background-image: url("../img/header_bg.jpg");
+//    background-size: cover;
+//    background-repeat: no-repeat;
+//}
+
+@media only screen and (max-width : 1200px){
+
+}
+
+@media only screen and (max-width : 992px){
+
+}
+
+@media only screen and (max-width : 768px){
+
+}
+
+@media only screen and (max-width : 480px){
+    //.header{
+    //    background-image: url("../img/header_bg_575.jpg");
+    //    background-size: cover;
+    //    background-repeat: no-repeat;
+    //}
+    //.j{
+    //    background-color: yellow;
+    //    height: 100px;
+    //    width: 100px;
+    //}
+}
+
+@media only screen and (max-width : 320px){
+
+}

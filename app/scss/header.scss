@@ -1,0 +1,21 @@
+.header{
+    background-image: url("../img/header_bg.jpg");
+    @media screen and (max-width : 480px) {
+      background-image: url("../img/header_bg_575.jpg");
+    }
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__top{
+  z-index: 1;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+}
+
+.j{
+  font-size: 58px;
+  padding-top: 100px;
+  color: red;
+}

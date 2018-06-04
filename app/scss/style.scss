@@ -1,6 +1,5 @@
-$blue: #3bbfce; /* цвет */
-body{
-  background-color: aqua;
-
-
-}
+@import "normalize";
+@import "base";
+//@import "adaptiv";
+@import "header";
+@import "adaptiv";
