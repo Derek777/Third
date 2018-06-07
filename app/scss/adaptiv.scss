@@ -1,28 +1,29 @@
-@media only screen and (max-width : 1200px){
-
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .header{
+    background-image: url("../img/header_bg_1200.jpg");
+  }
 }
 
-@media only screen and (max-width : 992px){
-
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .header{
+    background-image: url("../img/header_bg_992.jpg");
+  }
 }
 
-@media only screen and (max-width : 768px){
-
+@media screen and (min-width: 481px) and(max-width: 768px) {
+  .header{
+    background-image: url("../img/header_bg_768.jpg");
+  }
 }
 
-@media only screen and (max-width : 480px){
-    //.header{
-    //    background-image: url("../img/header_bg_575.jpg");
-    //    background-size: cover;
-    //    background-repeat: no-repeat;
-    //}
-    //.j{
-    //    background-color: yellow;
-    //    height: 100px;
-    //    width: 100px;
-    //}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .header{
+    background-image: url("../img/header_bg_480.jpg");
+  }
 }
 
-@media only screen and (max-width : 320px){
-
+@media screen and (max-width: 320px) {
+  .header{
+    background-image: url("../img/header_bg_320.jpg");
+  }
 }
