@@ -69,6 +69,12 @@ gulp.task('img', function() {
         .pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 });
 
+gulp.task('compress', function() {
+    gulp.src('app/img/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img'))
+});
+
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен

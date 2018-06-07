@@ -402,10 +402,23 @@ template {
   background-image: url("../img/header_bg.jpg");
   -webkit-background-size: cover;
           background-size: cover;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 480px) {
+  background-repeat: no-repeat;
+  min-height: 590px; }
+  @media screen and (max-width: 320px) {
     .header {
-      background-image: url("../img/header_bg_575.jpg"); } }
+      background-image: url("../img/header_bg_320.jpg"); } }
+  @media screen and (min-width: 321px) and (max-width: 480px) {
+    .header {
+      background-image: url("../img/header_bg_480.jpg"); } }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .header {
+      background-image: url("../img/header_bg_768.jpg"); } }
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    .header {
+      background-image: url("../img/header_bg_992.jpg"); } }
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+    .header {
+      background-image: url("../img/header_bg_1200.jpg"); } }
 
 .header__top {
   z-index: 1;
@@ -413,8 +426,3 @@ template {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.11); }
-
-.j {
-  font-size: 58px;
-  padding-top: 100px;
-  color: red; }
