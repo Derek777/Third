@@ -1,4 +1,4 @@
-var gulp         = require('gulp'), // Подключаем Gulp
+let gulp         = require('gulp'), // Подключаем Gulp
     scss         = require('gulp-sass'), //Подключаем Sass пакет,
     browserSync  = require('browser-sync'), // Подключаем Browser Sync
     concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
@@ -9,7 +9,8 @@ var gulp         = require('gulp'), // Подключаем Gulp
     imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
-    autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
+    autoprefixer = require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
+    plumber = require('gulp-plumber');
 
 gulp.task('mytask', function() {
     console.log('Привет, я таск!');
@@ -17,6 +18,7 @@ gulp.task('mytask', function() {
 
 gulp.task('scss', function(){ // Создаем таск Sass
     return gulp.src('app/scss/style.scss') // Берем источник
+        .pipe(plumber())
         .pipe(scss()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css

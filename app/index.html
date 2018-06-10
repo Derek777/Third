@@ -7,7 +7,22 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__top"></div>
+        <div class="header__top">
+            <div class="container wrap">
+                <img class="header__logo" src="img/Graff%20pink.png" alt="">
+                <input type="checkbox" id="menu-checkbox">
+                <nav role="navigation" class="header__navigation">
+                    <label for="menu-checkbox" class="toggle-button" data-open="Menu" data-close="Close"></label>
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+                        <li class="menu__item--login"><button class="login">Login</button></li>
+                    </ul>
+                </nav>
+            </div>
+         </div>
     </header>
 </body>
 </html>

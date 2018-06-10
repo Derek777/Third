@@ -1,29 +1,69 @@
 @media screen and (min-width: 993px) and (max-width: 1200px) {
   .header{
-    background-image: url("../img/header_bg_1200.jpg");
+    background-image: url("../img/header_bg/header_bg_1200.jpg");
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .header{
-    background-image: url("../img/header_bg_992.jpg");
+    background-image: url("../img/header_bg/header_bg_992.jpg");
   }
 }
 
 @media screen and (min-width: 481px) and(max-width: 768px) {
   .header{
-    background-image: url("../img/header_bg_768.jpg");
+    background-image: url("../img/header_bg/header_bg_768.jpg");
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .header{
-    background-image: url("../img/header_bg_480.jpg");
+    background-image: url("../img/header_bg/header_bg_480.jpg");
   }
 }
 
 @media screen and (max-width: 320px) {
   .header{
-    background-image: url("../img/header_bg_320.jpg");
+    background-image: url("../img/header_bg/header_bg_320.jpg");
   }
+  .header__navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu{
+    display: none;
+  }
+  .menu li{
+    width: 100%;
+    display: block;
+    background-color: lightgrey;
+  }
+  .menu a{
+    display: block;
+    padding: 8px;
+  }
+  .toggle-button{
+    text-align: center;
+    display: flex;
+    flex-direction: row;     /* make main axis horizontal (default setting) */
+    //justify-content: center; /* center items horizontally, in this case */
+    align-items: center;
+    cursor: pointer;
+    color: #000;
+  }
+  .toggle-button:after{
+    content: attr(data-open);
+    display: block;
+  }
+  #menu-checkbox:checked + nav[role="navigation"] .menu{
+    display: block;
+  }
+  #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+    content: attr(data-close);
+  }
+  //label[data-open]{
+  //  border-radius: 3px;
+  //  border: 1px blue solid;
+  //}
 }

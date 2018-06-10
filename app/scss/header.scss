@@ -1,20 +1,5 @@
 .header {
-  background-image: url("../img/header_bg.jpg");
-  //@media screen and (max-width: 320px) {
-  //  background-image: url("../img/header_bg_320.jpg");
-  //}
-  @media screen and (min-width: 321px) and (max-width: 480px) {
-    background-image: url("../img/header_bg_480.jpg");
-  }
-  @media screen and (min-width: 481px) and(max-width: 768px) {
-    background-image: url("../img/header_bg_768.jpg");
-  }
-  @media screen and (min-width: 769px) and (max-width: 992px) {
-    background-image: url("../img/header_bg_992.jpg");
-  }
-  @media screen and (min-width: 993px) and (max-width: 1200px) {
-    background-image: url("../img/header_bg_1200.jpg");
-  }
+  background-image: url("../img/header_bg/header_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 590px;
@@ -25,4 +10,61 @@
   height: 90px;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+}
+
+.header__logo {
+  margin-top: 20px;
+  margin-bottom: 17px;
+  margin-left: 35px;
+}
+
+.header__navigation{
+  padding-right: 47px;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;     /* make main axis horizontal (default setting) */
+  justify-content: center; /* center items horizontally, in this case */
+  align-items: center;
+  height: 90px;
+}
+
+.menu__link {
+  opacity: 0.75;
+  color: #454545;
+}:hover{
+  opacity: 1;
+ }
+
+.menu__item, .menu__item--login{
+  list-style: none;
+  display: flex;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: SegoeUIRegular, sans-serif;
+}
+
+.menu__item a{
+  text-decoration: none;
+}
+
+.menu__item{
+  margin-right: 40px;
+}
+
+.login{
+  width: 87px;
+  height: 27px;
+  background-color: #de6d6e;
+  border-radius: 3px;
+  border: 1px solid #de6d6e;
+  color: white;
+}
+
+.wrap{
+  display: flex;
+  justify-content: space-between;
 }
