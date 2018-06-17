@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/UniversLT.otf" as="font">
     <title>Third</title>
 </head>
 <body>
@@ -37,8 +38,42 @@
     <h2 class="header__header">Welcome to Pink</h2>
     <div class="header__content">A multi purpose theme from cssauthor.com</div>
 </header>
-<section class="services">
-
+<section class="services container" >
+    <h3 class="services__header">Lorem Ipsum is simply dummy</h3>
+    <p class="services__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown
+    </p>
+    <div class="services__items">
+        <div class="servises__item">
+            <svg class="servises__item--tickets">
+                <use xlink:href="img/sprite.svg#tickets"></use>
+            </svg>
+            <p>Tickets</p>
+            <div class="servises__item-hidden"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p></div>
+        </div>
+        <div class="servises__item">
+            <svg class="servises__item--camera">
+                <use xlink:href="img/sprite.svg#camera"></use>
+            </svg>
+            <p>Camera</p>
+            <div class="servises__item-hidden"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p></div>
+        </div>
+        <div class="servises__item">
+            <svg class="servises__item--beer">
+                <use xlink:href="img/sprite.svg#beer"></use>
+            </svg>
+            <p>Beer</p>
+            <div class="servises__item-hidden"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p></div>
+        </div>
+        <div class="servises__item">
+            <svg class="servises__item--device" >
+                <use xlink:href="img/sprite.svg#device"></use>
+            </svg>
+            <p>Device</p>
+            <div class="servises__item-hidden"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p></div>
+        </div>
+    </div>
 </section>
 <script src="js/adaptiv-menu.js"></script>
 </body>
