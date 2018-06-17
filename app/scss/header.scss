@@ -13,16 +13,21 @@
 }
 
 .header__logo {
+  background-image: url("../img/Graff pink.png");
+  width: 130px;
+  height: 52px;
   margin-top: 20px;
   margin-bottom: 17px;
   margin-left: 35px;
+  display: block;
 }
 
-.header__navigation{
+.menu{
   padding-right: 47px;
+  position: relative;
 }
 
-.menu {
+.menu__list {
   padding: 0;
   margin: 0;
   display: flex;
@@ -55,6 +60,11 @@
   margin-right: 40px;
 }
 
+.menu__icon{
+  display: none;
+}
+
+
 .login{
   width: 87px;
   height: 27px;
@@ -68,3 +78,31 @@
   display: flex;
   justify-content: space-between;
 }
+
+.login__icon{
+  width: 13px;
+  height: 14px;
+}
+
+.header__header{
+  margin-top: 320px;
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: 0 0 13px rgba(0, 0, 0, 0.22);
+  color: white;
+  font-family: AlteHaasGroteskBold, sans-serif;
+  font-size: 69px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header__content{
+  text-align: center;
+  text-shadow: 0 0 13px rgba(0, 0, 0, 0.22);
+  color: white;
+  font-family: UniversLT, sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+

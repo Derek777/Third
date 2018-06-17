@@ -10,10 +10,34 @@ let gulp         = require('gulp'), // Подключаем Gulp
     pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
     autoprefixer = require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
-    plumber = require('gulp-plumber');
+    plumber = require('gulp-plumber'),
+    svgstore = require('gulp-svgstore'),
+    svgmin = require('gulp-svgmin'),
+    path = require('path');
 
 gulp.task('mytask', function() {
     console.log('Привет, я таск!');
+});
+
+gulp.task('sprite',['clean-svg'], function () {
+    return gulp
+        .src('app/svg/*.svg')
+        .pipe(svgmin(function (file) {
+            let prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(rename({basename: "sprite"}))
+        .pipe(gulp.dest('app/img'));
+
+
 });
 
 gulp.task('scss', function(){ // Создаем таск Sass
@@ -58,6 +82,10 @@ gulp.task('watch', ['browser-sync', 'scripts', 'scss'], function() {
 
 gulp.task('clean', function() {
     return del.sync('dist'); // Удаляем папку dist перед сборкой
+});
+
+gulp.task('clean-svg', function() {
+    return del.sync('app/img/sprite.svg'); // Удаляем папку dist перед сборкой
 });
 
 gulp.task('img', function() {
