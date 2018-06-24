@@ -20,6 +20,10 @@
   .header__header{
     margin-top: 220px;
   }
+  //CONTENT
+  .post{
+    margin-bottom: 60px;
+  }
 }
 
 
@@ -36,6 +40,19 @@
   .header__content{
     font-size: 20px;
   }
+  //CONTENT
+  .post{
+    margin-bottom: 40px;
+  }
+
+  //FOOTER
+  .sub-menu__header{
+    font-size: 19px;
+  }
+
+  .sub-menu__header p{
+    font-size: 13px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -44,11 +61,33 @@
     background-image: url("../img/header_bg/header_bg_320.jpg");
   }
   .header__header{
-    font-size: 55px;
+    font-size: 45px;
     margin-top: 220px;
   }
   .header__content{
     font-size:17px;
+  }
+  //CONTENT
+  .post{
+    margin-bottom: 20px;
+  }
+  //FOOTER
+
+  .footer__sub-menu{
+    display: block;
+    text-align: center;
+  }
+
+  .sub-menu{
+    margin-bottom: 30px;
+  }
+
+  .sub-menu__header{
+    font-size: 17px;
+  }
+
+  .sub-menu__header p{
+    font-size: 11px;
   }
 }
 
@@ -101,5 +140,17 @@
   .login__icon{
     width: 13px;
     height: 14px;
+  }
+
+
+
+}
+
+@media only screen and  (max-width: 628px){
+  .footer__sub-menu{
+    flex-wrap: wrap;
+  }
+  .footer__social{
+    margin-top: 30px;
   }
 }

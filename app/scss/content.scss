@@ -1,0 +1,33 @@
+.content__block{
+  padding: 0 50px;
+}
+
+.post{
+  @include clearfix;
+  margin-bottom: 80px;
+}
+
+.post__header{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #404040;
+  font-family: UniversLT, sans-serif;
+  font-size: 27px;
+  font-weight: 300;
+}
+
+.post__content{
+  margin-top: 0;
+  color: #8b8b8b;
+  font-family: UniversLT, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.post__img{
+  width: 199px;
+  height: 132px;
+  float: left;
+  margin-right: 25px;
+}
