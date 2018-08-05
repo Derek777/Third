@@ -1,0 +1,192 @@
+.modal {
+  box-sizing: border-box;
+  height: 300px;
+  display: none;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  max-width: 450px;
+  top: 120px;
+  left: calc(50% - 225px);
+  z-index: 5;
+}
+
+.modal__nav {
+  margin-right: -5px;
+}
+
+.modal__nav .active,
+.modal__nav a:hover {
+  //display: flex;
+  opacity: 1;
+  position: relative;
+  right: 5px;
+  box-shadow: 0 0 6px #1a1a1a;
+}
+
+.list {
+  display: none;
+  position: relative;
+}
+
+.modal__list {
+  background-color: ghostwhite;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 0 3px #1a1a1a;
+}
+
+.modal__list .active {
+  display: flex;
+}
+
+.modal a {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  box-shadow: 0 0 3px #1a1a1a;
+  @include center;
+  cursor: pointer;
+}
+
+.modal a svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+.modal__nav--blue {
+  @include blue;
+}
+
+.modal__nav--green {
+  @include green;
+}
+
+.modal__nav--red {
+  @include red;
+}
+
+.modal__form {
+  padding: $form_padding;
+  margin: 0 auto;
+}
+
+.modal__header {
+  color: #4d4d4d;
+  margin: 0 0 20px 0;
+  padding: 0 0 15px 0;
+  border-bottom: solid 1px #e6e6e6;
+  text-shadow: 1px 1px 0 white;
+}
+
+.modal__inpur-wrap {
+  height: 32px;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.modal__inpur-wrap:before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-left: solid 1px #cccccc;
+  border-right: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  color: #4d4d4d;
+  position: relative;
+  height: 32px;
+  line-height: 32px;
+  border: none;
+  background: none;
+  padding: 0 10px;
+  font-size: 16px;
+  transition: all 0.2s linear;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  outline: none;
+}
+
+.modal__btn {
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+}
+
+.modal__btn input {
+  color: white;
+  cursor: pointer;
+  padding: 10px 25px;
+}
+
+.modal__btn--blue {
+  @include blue;
+}
+
+.modal__btn--green {
+  @include green;
+}
+
+.modal__btn--red {
+  @include red;
+}
+
+.modal__btn--blue:hover, .modal__btn--green:hover, .modal__btn--red:hover {
+  opacity: 0.9;
+}
+
+#shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+#close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  z-index: 3;
+}
+
+#close:hover {
+  opacity: 1;
+}
+
+#close:before, #close:after {
+  position: absolute;
+  left: 15px;
+  top: -2;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #000000;
+
+}
+
+#close:before {
+  transform: rotate(45deg);
+}
+
+#close:after {
+  transform: rotate(-45deg);
+}
+

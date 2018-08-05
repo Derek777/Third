@@ -16,11 +16,10 @@
     "url": "https://github.com/Derek777/Third/issues"
   },
   "homepage": "https://github.com/Derek777/Third#readme",
-  "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.24.6",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-cache": "^1.0.2",
     "gulp-concat": "^2.6.1",
@@ -36,8 +35,9 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.0",
+    "gulp-uglify-es": "^1.0.4",
     "gulp-uglifyjs": "^0.6.2",
-    "imagemin-pngquant": "^5.1.0"
+    "imagemin-pngquant": "^6.0.0"
   },
   "optionalDependencies": {}
 }

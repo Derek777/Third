@@ -23,7 +23,7 @@
   display: block;
 }
 
-.menu{
+.menu {
   padding-right: 47px;
   position: relative;
 }
@@ -41,11 +41,13 @@
 .menu__link {
   opacity: 0.75;
   color: #454545;
-}:hover{
-  opacity: 1;
- }
+}
 
-.menu__item, .menu__item--login{
+:hover {
+  opacity: 1;
+}
+
+.menu__item, .menu__item--login {
   list-style: none;
   display: flex;
   font-size: 17px;
@@ -53,20 +55,19 @@
   font-family: SegoeUIRegular, sans-serif;
 }
 
-.menu__item a{
+.menu__item a {
   text-decoration: none;
 }
 
-.menu__item{
+.menu__item {
   margin-right: 40px;
 }
 
-.menu__icon{
+.menu__icon {
   display: none;
 }
 
-
-.login{
+.login {
   width: 87px;
   height: 27px;
   background-color: #de6d6e;
@@ -75,17 +76,17 @@
   color: white;
 }
 
-.wrap{
+.wrap {
   display: flex;
   justify-content: space-between;
 }
 
-.login__icon{
+.login__icon {
   width: 13px;
   height: 14px;
 }
 
-.header__header{
+.header__header {
   margin-top: 320px;
   margin-bottom: 0;
   text-align: center;
@@ -97,7 +98,7 @@
   text-transform: uppercase;
 }
 
-.header__content{
+.header__content {
   text-align: center;
   text-shadow: 0 0 13px rgba(0, 0, 0, 0.22);
   color: white;

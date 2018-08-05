@@ -1,13 +1,13 @@
-.content__block{
+.content__block {
   padding: 0 50px;
 }
 
-.post{
+.post {
   @include clearfix;
   margin-bottom: 80px;
 }
 
-.post__header{
+.post__header {
   margin-top: 5px;
   margin-bottom: 15px;
   color: #404040;
@@ -16,7 +16,7 @@
   font-weight: 300;
 }
 
-.post__content{
+.post__content {
   margin-top: 0;
   color: #8b8b8b;
   font-family: UniversLT, sans-serif;
@@ -25,7 +25,7 @@
   line-height: 22px;
 }
 
-.post__img{
+.post__img {
   width: 199px;
   height: 132px;
   float: left;

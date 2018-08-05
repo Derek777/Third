@@ -1,0 +1,34 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin blue {
+  border: solid 1px #0083ff;
+  background: linear-gradient(#0083ff, #0073e0);
+}
+
+@mixin green {
+  border: solid 1px #57c100;
+  background: linear-gradient(#58c400, #4aa500);
+}
+
+@mixin red {
+  border: solid 1px #e50000;
+  background: linear-gradient(#e50000, #c90000);
+}
+
+$form_padding: 40px 25px 40px;

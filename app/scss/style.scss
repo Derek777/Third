@@ -1,9 +1,10 @@
 @import "normalize";
 @import "base";
-//@import "adaptiv";
+@import "mixins";
 @import "header";
 @import "services";
 @import "content";
 @import "footer";
+@import "modal";
 @import "adaptiv";
 @import "fonts";
